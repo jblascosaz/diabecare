@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_classic">
+
+    <CheckBox
+        android:id="@+id/checkBoxM"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:buttonTint="#000000"
+        app:layout_constraintBottom_toBottomOf="@+id/imgchico"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.725"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/imgchico"
+        app:layout_constraintVertical_bias="0.943" />
+
+    <ImageView
+        android:id="@+id/imgchico"
+        android:layout_width="230dp"
+        android:layout_height="388dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.966"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.454"
+        app:srcCompat="@drawable/genremale" />
+
+    <ImageView
+        android:id="@+id/imgchica"
+        android:layout_width="226dp"
+        android:layout_height="390dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.086"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.451"
+        app:srcCompat="@drawable/ola" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="253dp"
+        android:layout_height="44dp"
+        android:fontFamily="@font/lato_light"
+        android:text="¿Cuál es tu sexo?"
+        android:textColor="#FFFFFF"
+        android:textSize="35dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.123" />
+
+
+    <CheckBox
+        android:id="@+id/checkBoxF"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:buttonTint="#000000"
+        app:layout_constraintBottom_toBottomOf="@+id/imgchica"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.295"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/imgchica"
+        app:layout_constraintVertical_bias="0.944" />
+
+    <Button
+        android:id="@+id/button33"
+        android:layout_width="86dp"
+        android:layout_height="46dp"
+        android:background="@drawable/custom_button"
+        android:fontFamily="@font/lato_black"
+        android:textColor="#FFFFFF"
+        android:enabled="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.893" />
+    <Button
+        android:id="@+id/button3"
+        android:layout_width="86dp"
+        android:layout_height="46dp"
+        android:background="@drawable/custom_button"
+        android:fontFamily="@font/lato_black"
+        android:textColor="#FFFFFF"
+        android:enabled="false"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.893" />
+
+
+    <ImageView
+        android:id="@+id/imageView10"
+        android:layout_width="52dp"
+        android:layout_height="183dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.992"
+        app:srcCompat="@drawable/arrow" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

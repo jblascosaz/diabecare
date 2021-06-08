@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "215001161838",
+    "project_id": "diabecare-dcec1",
+    "storage_bucket": "diabecare-dcec1.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:215001161838:android:caa6f035f2e0e57de8467f",
+        "android_client_info": {
+          "package_name": "com.svalero.diabecare_frontend"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "215001161838-9crokcrrqm31lmpi66vjqsrrcb4bp35o.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBqqQWRZyN6-ymhldtlMmKPF5EQMzeIrDw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "215001161838-9crokcrrqm31lmpi66vjqsrrcb4bp35o.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.svalero.diabecare_frontend">
+
+    <uses-permission android:name="android.permission.INTERNET"></uses-permission>
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher2"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:usesCleartextTraffic="true"
+        android:theme="@style/Theme.AppCompat.NoActionBar">
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".Login.LoginActivity">
+            <intent-filter>
+                <action android:name="android.intent.login"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity android:name=".Login.Login1">
+            <intent-filter>
+                <action android:name="android.intent.login1"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity android:name=".Login.Register1">
+            <intent-filter>
+                <action android:name="android.intent.register1"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity android:name=".Login.Register2">
+            <intent-filter>
+                <action android:name="android.intent.register2"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity android:name=".Login.Register3">
+            <intent-filter>
+                <action android:name="android.intent.register3"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity android:name=".Login.Register4">
+            <intent-filter>
+                <action android:name="android.intent.register4"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity android:name=".Login.Register4_1">
+            <intent-filter>
+                <action android:name="android.intent.register4_1"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity android:name=".Login.Register5">
+            <intent-filter>
+                <action android:name="android.intent.register5"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity android:name=".HomeActivity">
+            <intent-filter>
+                <action android:name="android.intent.homeactivity"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity android:name=".Home.RatioCalculator">
+            <intent-filter>
+                <action android:name="android.intent.ratiocalculator"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity android:name=".Home.InsulinCalculator">
+            <intent-filter>
+                <action android:name="android.intent.insulincalculator"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity android:name=".Home.FoodList">
+            <intent-filter>
+                <action android:name="android.intent.foodlist"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity android:name=".Home.RecipeList">
+            <intent-filter>
+                <action android:name="android.intent.recipelist"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity android:name=".Home.DetailsActivity">
+            <intent-filter>
+                <action android:name="android.intent.detalles"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>
