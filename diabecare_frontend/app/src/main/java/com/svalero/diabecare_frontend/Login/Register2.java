@@ -56,9 +56,6 @@ public class Register2 extends AppCompatActivity {
 
 
 
-                Toast toast1 = Toast.makeText(getApplicationContext(),
-                        "fecha: " + fecha22, Toast.LENGTH_SHORT);
-                toast1.show();
                 startActivity(toy);
             }
 

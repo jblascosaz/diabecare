@@ -3,11 +3,13 @@ package com.svalero.diabecare_frontend.Home;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.Button;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
+import com.svalero.diabecare_frontend.HomeActivity;
 import com.svalero.diabecare_frontend.R;
 
 public class RecipeList extends AppCompatActivity {
@@ -15,6 +17,7 @@ public class RecipeList extends AppCompatActivity {
     RecyclerView recyclerView;
     RecyclerRecipe adapter;
     RecyclerFood adapter2;
+    private Button volver;
     private RecyclerRecipe.RecyclerViewClickListener listener;
 
     int imagenes[]={(R.drawable.alc),(R.drawable.burri),(R.drawable.cazo),(R.drawable.zana),(R.drawable.beren), (R.drawable.ens), (R.drawable.ensala), (R.drawable.gall)};
@@ -28,7 +31,7 @@ public class RecipeList extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.recetas_recycler);
-
+        volver = findViewById(R.id.button47);
         recyclerView= findViewById(R.id.recycler2);
         recyclerView.setLayoutManager(new LinearLayoutManager(this));
 
@@ -36,6 +39,14 @@ public class RecipeList extends AppCompatActivity {
         recyclerView.setAdapter(adapter);
 
 
+        volver.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent toy = new Intent(RecipeList.this, HomeActivity.class);
+                startActivity(toy);
+
+            }
+        });
     }
 
     private void setAdapter(){
@@ -57,4 +68,5 @@ public class RecipeList extends AppCompatActivity {
             }
         };
     }
+
 }

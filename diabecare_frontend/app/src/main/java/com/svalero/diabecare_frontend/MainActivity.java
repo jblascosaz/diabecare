@@ -26,7 +26,7 @@ public class MainActivity extends AppCompatActivity {
             public void run() {
                 //Write whatever to want to do after delay specified (1 sec)
                 Intent pantalla = new Intent(getBaseContext(),
-                        HomeActivity.class);
+                        LoginActivity.class);
                 startActivity(pantalla);
                 // Threads--> Clase
                 // Runnable-->Interfaz

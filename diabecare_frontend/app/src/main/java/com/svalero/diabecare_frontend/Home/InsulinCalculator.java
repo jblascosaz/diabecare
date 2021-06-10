@@ -1,5 +1,6 @@
 package com.svalero.diabecare_frontend.Home;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -9,6 +10,7 @@ import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import com.svalero.diabecare_frontend.HomeActivity;
 import com.svalero.diabecare_frontend.R;
 
 public class InsulinCalculator  extends AppCompatActivity {
@@ -28,6 +30,15 @@ public class InsulinCalculator  extends AppCompatActivity {
         a6 = findViewById(R.id.a6);
         volver = findViewById(R.id.button47);
         calcular = findViewById(R.id.button48);
+
+
+        volver.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent toy = new Intent(InsulinCalculator.this, HomeActivity.class);
+                startActivity(toy);
+            }
+        });
 
         calcular.setOnClickListener(new View.OnClickListener() {
             @Override

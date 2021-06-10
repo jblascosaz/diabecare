@@ -102,6 +102,18 @@
                 <category android:name="android.intent.category.DEFAULT"/>
             </intent-filter>
         </activity>
+        <activity android:name=".Home.ExerciseList">
+            <intent-filter>
+                <action android:name="android.intent.exercisess"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity android:name=".Home.Stadistic">
+            <intent-filter>
+                <action android:name="android.intent.stadistic"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
     </application>
 
 </manifest>

@@ -8,12 +8,14 @@ import android.widget.Button;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import com.svalero.diabecare_frontend.Home.ExerciseList;
 import com.svalero.diabecare_frontend.Home.FoodList;
 import com.svalero.diabecare_frontend.Home.InsulinCalculator;
 import com.svalero.diabecare_frontend.Home.RatioCalculator;
 //import com.svalero.diabecare_frontend.Home.Stadistic;
 import com.svalero.diabecare_frontend.Home.RecipeList;
 import com.svalero.diabecare_frontend.Home.RecyclerFood;
+import com.svalero.diabecare_frontend.Home.Stadistic;
 import com.svalero.diabecare_frontend.Login.Login1;
 import com.svalero.diabecare_frontend.Login.Register3;
 import com.svalero.diabecare_frontend.Login.Register4;
@@ -21,7 +23,7 @@ import com.svalero.diabecare_frontend.Login.Register4;
 public class HomeActivity extends AppCompatActivity {
 
     private Button volver;
-    private Button botonRaciones, botonInsulina, botonEstadistica, botonFood, botonRecipe;
+    private Button botonRaciones, botonInsulina, botonEstadistica, botonFood, botonRecipe, botonEjercicio;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -33,6 +35,7 @@ public class HomeActivity extends AppCompatActivity {
         botonFood = findViewById(R.id.button9);
         botonEstadistica = findViewById(R.id.button13);
         botonRecipe = findViewById(R.id.button10);
+        botonEjercicio = findViewById(R.id.button11);
 
 
         volver.setOnClickListener(new View.OnClickListener() {
@@ -70,13 +73,20 @@ public class HomeActivity extends AppCompatActivity {
                 startActivity(toy);
             }
         });
-        /*botonEstadistica.setOnClickListener(new View.OnClickListener() {
+        botonEjercicio.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent toy = new Intent(HomeActivity.this, ExerciseList.class);
+                startActivity(toy);
+            }
+        });
+        botonEstadistica.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Intent toy = new Intent(HomeActivity.this, Stadistic.class);
                 startActivity(toy);
             }
         });
-*/
+
     }
 }
