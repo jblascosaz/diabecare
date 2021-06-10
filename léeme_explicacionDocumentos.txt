@@ -1,0 +1,22 @@
+-------------------- D I A B E C A R E --------------------
+ ------------------- ----------------- ----------------
+Para ejecutar el proyecto en local, desde android estudio, abrir el proyecto diabecare_frontend.
+Actualmente toda la base de datos de usuarios y datos esta alojado en FIREBASE hasta el día 1/07/2021.
+Posteriormente a ese día, si deseas ejecutar la aplicación con FIREBASE, tienes que darte de alta en la página y
+enlazar la aplicación con tu cuenta FIREBASE.
+
+Ejecutando diabecare_backend, se genera la base de datos en mysql, enlazado necesario para ejecutar la aplicación en local
+sin firebase.
+
+DOCUMENTACION-DIABECARE-JOSEANTONIO se encuentra la documentación del trabajo a día 08/06/2021
+
+app-debug.apk la apk que puedes descargar e instalar directamente en tu móvil.
+
+diabecare.sql base de datos sql que se genera al ejecutar el backend
+
+diabecare_PPT presentación power point del proyecto
+
+diabecare_video video navegando por la aplicación y mostrando todas las funciones (no voice)
+
+ -------------------- -------------------- -------------------- -------------------- --------------------
+ -------------------- -------------------- -------------------- -------------------- --------------------
